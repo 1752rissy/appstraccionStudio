@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff;
+  }
+  to {
+    box-shadow: 0 0 20px #58a6ff, 0 0 30px #58a6ff;
+  }
+}
+
+.app-header {
+  background-color: #161b22;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.app-title-link {
+  text-decoration: none;
+}
+
+.app-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #58a6ff;
+  margin: 0;
+  text-shadow: 0 0 10px #58a6ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.app-subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: #c9d1d9;
+  margin-top: 1rem;
+}
+
+.app-nav {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+}
+
+.app-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app-nav ul li {
+  margin: 0 1rem;
+}
+
+.app-nav ul li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.app-nav ul li a:hover {
+  color: #58a6ff;
+  border-color: #58a6ff;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
