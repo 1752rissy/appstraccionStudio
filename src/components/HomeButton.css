@@ -56,3 +56,21 @@
   top: -10%;
   left: -10%;
 }
+
+/* Media Queries for HomeButton.css */
+@media (max-width: 480px) {
+  .home-button-container {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .home-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .home-button-icon {
+    font-size: 1.1rem;
+    margin-right: 6px;
+  }
+}

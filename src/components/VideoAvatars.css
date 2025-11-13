@@ -347,3 +347,129 @@
   top: 0;
   left: 0;
 }
+
+/* Media Queries for VideoAvatars.css */
+@media (max-width: 768px) {
+  .video-avatars-page {
+    padding: 1rem;
+  }
+
+  .intro-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .main-headline {
+    font-size: 2rem;
+  }
+
+  .target-audience-section,
+  .how-it-works-section,
+  .tech-stack-section,
+  .use-cases-section,
+  .cta-section,
+  .demo-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .target-audience-section h2,
+  .how-it-works-section h2,
+  .tech-stack-section h2,
+  .use-cases-section h2,
+  .cta-section h2,
+  .demo-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .target-audience-section ul li,
+  .how-it-works-section ul li {
+    font-size: 1.1rem;
+    padding-left: 1.5rem;
+  }
+
+  .how-it-works-section .step {
+    max-width: 90%; /* Allow steps to take more width on small screens */
+    min-width: unset; /* Remove min-width constraint */
+    padding: 1rem;
+  }
+
+  .how-it-works-section .step h3 {
+    font-size: 1.4rem;
+  }
+
+  .tech-stack-section p {
+    font-size: 1rem;
+  }
+
+  .testimonial blockquote {
+    font-size: 1.2rem;
+  }
+
+  .testimonial cite {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  /* Responsive iframes for demo section */
+  .demo-section > div { /* Target the flex container around iframes */
+    flex-direction: column; /* Stack iframes vertically */
+    align-items: center;
+  }
+
+  .demo-section iframe {
+    width: 100%; /* Make iframe take full width of its container */
+    height: 400px; /* Adjust height for mobile */
+    max-width: 315px; /* Maintain aspect ratio for shorts */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .main-headline {
+    font-size: 1.5rem;
+  }
+
+  .target-audience-section h2,
+  .how-it-works-section h2,
+  .tech-stack-section h2,
+  .use-cases-section h2,
+  .cta-section h2,
+  .demo-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .target-audience-section ul li,
+  .how-it-works-section ul li {
+    font-size: 1rem;
+  }
+
+  .how-it-works-section .step h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial blockquote {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .demo-section iframe {
+    height: 300px; /* Further adjust height for very small screens */
+  }
+}
