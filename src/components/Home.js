@@ -49,13 +49,13 @@ const Home = () => {
             <span className="service-icon">📢</span>
             <h3>Campañas en 48h</h3>
             <p>Promociones, lanzamientos, eventos — listos rápido.</p>
-            <Link to="/campañas-en-48h">Ver más</Link>
+            {/* <Link to="/campañas-en-48h">Ver más</Link> */}
           </div>
           <div className="service-item">
             <span className="service-icon">📊</span>
             <h3>Producción de contenido</h3>
             <p>De la idea al post, al video, al email — todo en un flujo.</p>
-            <Link to="/produccion-de-contenido">Ver más</Link>
+            {/* <Link to="/produccion-de-contenido">Ver más</Link> */}
           </div>
         </section>
       </main>

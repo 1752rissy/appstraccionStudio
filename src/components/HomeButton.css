@@ -1,0 +1,58 @@
+.home-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-button:hover {
+  background: linear-gradient(45deg, #00c6ff, #007bff);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
+  transform: translateY(-3px);
+}
+
+.home-button-icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover .home-button-icon {
+  transform: rotate(360deg);
+}
+
+/* Optional: Add a subtle glowing effect */
+.home-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.7s ease;
+  opacity: 0;
+}
+
+.home-button:hover::before {
+  opacity: 1;
+  top: -10%;
+  left: -10%;
+}

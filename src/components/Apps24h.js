@@ -1,5 +1,6 @@
 import React from 'react';
 import './Apps24h.css';
+import HomeButton from './HomeButton';
 
 
 const WhatsAppIcon = () => (
@@ -88,6 +89,7 @@ const Apps24h = () => {
           Solicita una demo gratis con un requerimiento funcional de tu emprendimiento, pyme o agencia.
         </a>
       </div>
+      <HomeButton />
     </div>
   );
 };

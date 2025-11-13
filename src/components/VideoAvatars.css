@@ -90,6 +90,11 @@
   padding: 2rem;
   border-radius: 10px;
   background-color: #161b22;
+  text-align: center; /* Centralize content */
+  display: flex; /* Enable flexbox for children */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Space between cards */
 }
 
 .how-it-works-section h2 {
@@ -100,10 +105,25 @@
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   text-shadow: 0 0 5px #58a6ff;
+  width: 100%; /* Ensure heading takes full width */
 }
 
 .how-it-works-section .step {
+  flex: 1; /* Allow steps to grow and shrink */
+  min-width: 280px; /* Minimum width for each card */
+  max-width: 30%; /* Max width for each card, adjust as needed */
   margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #0d1117; /* Slightly darker background for cards */
+  box-shadow: 0 4px 10px rgba(88, 166, 255, 0.1);
+  text-align: left; /* Align text within each step to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works-section .step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(88, 166, 255, 0.2);
 }
 
 .how-it-works-section .step h3 {
@@ -111,11 +131,14 @@
   font-size: 1.8rem;
   color: #c9d1d9;
   margin-bottom: 1rem;
+  text-align: center; /* Center step titles */
 }
 
 .how-it-works-section ul {
   list-style: none;
   padding: 0;
+  display: block; /* Revert to block for lists within cards */
+  text-align: left; /* Ensure list items are left-aligned */
 }
 
 .how-it-works-section ul li {

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
+import HomeButton from './HomeButton';
 import './VideoAvatars.css';
 
 const WhatsAppIcon = () => (
@@ -60,14 +60,38 @@ const VideoAvatars = () => {
       </div>
       <div className="demo-section section-container">
         <h2>🎬 Demos de Avatares</h2>
-        <div className="player-wrapper">
-          <ReactPlayer
-            className="react-player"
-            url="https://www.youtube.com/watch?v=Cd7sVpwfYk8"
-            controls={true}
-            width="100%"
-            height="100%"
-          />
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto', marginBottom: '20px' }}>
+          <iframe
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/Cd7sVpwfYk8"
+            title="YouTube Short"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto', marginBottom: '20px' }}>
+          <iframe
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/IvwyY3a2sTo"
+            title="YouTube Short"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'auto' }}>
+          <iframe
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/8gSXt1xcdCE"
+            title="YouTube Short"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
       <div className="cta-section section-container">
@@ -77,6 +101,7 @@ const VideoAvatars = () => {
           “Pedinos el avatar para tu negocio — gratis y sin compromiso desde aca o escribinos al 2996052287!!”
         </a>
       </div>
+      <HomeButton />
     </div>
   );
 };
