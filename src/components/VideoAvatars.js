@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 import './VideoAvatars.css';
 
 const WhatsAppIcon = () => (
@@ -55,6 +56,18 @@ const VideoAvatars = () => {
         <div className="testimonial">
           <blockquote>“Mi avatar explica los cambios de política a los empleados. Ahora el 94% entiende el mensaje a la primera.”</blockquote>
           <cite>— Director de RRHH, empresa de logística</cite>
+        </div>
+      </div>
+      <div className="demo-section section-container">
+        <h2>🎬 Demos de Avatares</h2>
+        <div className="player-wrapper">
+          <ReactPlayer
+            className="react-player"
+            url="https://www.youtube.com/watch?v=Cd7sVpwfYk8"
+            controls={true}
+            width="100%"
+            height="100%"
+          />
         </div>
       </div>
       <div className="cta-section section-container">
